@@ -1,0 +1,9 @@
+Set-ExecutionPolicy RemoteSigned
+
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+Install-Module ExchangeOnlineManagement
+
+Connect-ExchangeOnline
+
+Start-ManagedFolderAssistant -Identity t_fualefac@ghsscm.org
